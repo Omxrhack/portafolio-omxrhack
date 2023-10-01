@@ -1,0 +1,33 @@
+---
+interface Props {
+  id: string;
+}
+const { id } = Astro.props;
+---
+
+<section id={id}>
+  <div class="contenedor">
+    <div class="contenedor-texto-prin">
+      <h2>Estudios</h2>
+    </div>
+    <div class="cards-estudios"></div>
+  </div>
+</section>
+
+<style>
+  section {
+    height: 100vh;
+  }
+  .contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 2rem;
+  }
+</style>
